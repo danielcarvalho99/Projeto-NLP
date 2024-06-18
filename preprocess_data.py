@@ -47,7 +47,6 @@ def remove_emojis(text):
     return text
 
 def remove_stop_words(text):
-    nltk.download('stopwords')
     stop_words = stopwords.words('english')
     new_text = ''
     for word in text.split():
@@ -63,6 +62,9 @@ def stem_words(text):
         new_text += ''.join(f'{stemmer.stem(word)} ')
 
     return new_text
+
+def get_stopwords():
+    nltk.download('stopwords')
 
 def preprocess_text(text):
     text = lowercase_text(text)
