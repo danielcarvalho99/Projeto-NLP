@@ -29,8 +29,8 @@ def load_pipeline():
 pipe = load_pipeline()
 
 
-TITLE_TEXT = f"IMDB reviews"
-DESCRIPTION_TEXT = f"Esta é uma aplicação para o trabalho de NLP. Utilizamos a base de dados de reviews do IMDb com 50.000 comentários entre positivos e negativos (a base está balanceada). Por meio desta interface é possível visualizar como os exemplos da nossa base de teste foram classificados com um BERT treinado para esta task."
+TITLE_TEXT = f"Movie reviews"
+DESCRIPTION_TEXT = f"Esta é uma aplicação para o trabalho de NLP. Nosso modelo foi treinado em uma base de 50.000 reviews de filmes do IMDB, classificados como positivos ou negativos (a base está balanceada). Por meio desta interface é possível visualizar como os exemplos de outra base de reviews, do site Rotten Tomatoes foram classificados com as nossas soluções simbólica e neural."
 
 st.title(TITLE_TEXT)
 st.write(DESCRIPTION_TEXT)
